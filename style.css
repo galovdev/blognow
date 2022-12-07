@@ -1,0 +1,167 @@
+@font-face {
+    font-family: "InterRegular";
+    src: url("Inter-Regular.otf");
+}
+
+@font-face {
+    font-family: "InterMedium";
+    src: url("Inter-Medium.otf");
+}
+
+@font-face {
+    font-family: "InterSemiBold";
+    src: url("Inter-SemiBold.otf");
+}
+
+@font-face {
+    font-family: "InterBold";
+    src: url("Inter-Bold.otf");
+}
+
+@font-face {
+    font-family: "InterExtraBold";
+    src: url("Inter-ExtraBold.otf");
+}
+
+@font-face {
+    font-family: "InterBlack";
+    src: url("Inter-Black.otf");
+}
+
+body {
+    margin: 0%;
+    padding: 0%;
+    background-color: #fffefc;
+}
+
+nav {
+    margin: 0%;
+    padding: 1.2rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    color: aqua;
+    align-items: center;
+}
+
+.fa-feather {
+    margin-right: 0.4rem;
+}
+
+.logo p{
+    font-family: InterBold;
+    font-size: 1.06rem;
+    color: #111111;
+}
+
+.product-nav-info, .login-signup-nav {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+
+.login-btn {
+    color: #fffefc;
+    margin: 0rem 0rem 0rem 0.4rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 0.4rem;
+    background-color: #111111;
+    font-size: 0.96rem;
+}
+
+nav p, nav a {
+    font-family: InterSemiBold;
+    color: #111111;
+    font-size: 0.96rem;
+    letter-spacing: -0.01rem;
+    padding: 0rem 0.8rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    padding: 0rem 0.44rem;
+    background-color: #f9f5f1;
+    padding: 0.5rem 0.8rem 0.5rem 0.8rem;
+    border-radius: 0.4rem;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+main {
+    padding: 4rem 15rem;
+}
+
+.main-text h1{
+    font-family: InterBold;
+    font-size: 3.8rem;
+    margin: 0%;
+    letter-spacing: -0.06rem;
+    padding-bottom: 0.16rem;
+}
+
+.support-main-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.support-main-text p{
+    font-family: InterSemiBold;
+    font-size: 1.4rem;
+    letter-spacing: -.01rem;
+    margin: 0%;
+}
+
+.support-main-text input {
+    padding: 0.4rem 0.6rem;
+    font-family: InterMedium;
+    border-width: 0.14rem;
+    border-radius: 0.26rem;
+    color: #111111;
+    margin-right: 0.2rem;
+    letter-spacing: 0.01rem;
+    width: 100%;
+}
+
+.support-main-text button {
+    display: flex;
+    padding: 0.4rem 0.6rem;
+    background-color: #111111;
+    font-family: InterBold;
+    border-width: 0.14rem;
+    border-radius: 0.26rem;
+    letter-spacing: 0.04rem;
+    color: #fffefc;
+}
+
+.main-illustration img{
+    width: 100%;
+}
+
+.main-texts {
+    display: flex;
+    justify-content: space-between;
+    padding: 3.5rem 0rem;
+    margin: 0%;
+}
+
+.input-btn {
+    display: flex;
+}
+
+::placeholder {
+    color:#111111;
+    font-size: 0.84rem;
+}
+
+.section1 {
+    width: 175;
+    height: 800px;
+    margin: 0rem 15rem 0rem 15rem;
+    background-color: #f9f5f1;
+    
+}
+
