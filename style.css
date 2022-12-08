@@ -32,6 +32,12 @@ body {
     margin: 0%;
     padding: 0%;
     background-color: #fffefc;
+    color: #111111;
+}
+
+i {
+    color: #111111;
+    margin-right: 0.34rem;
 }
 
 nav {
@@ -44,14 +50,14 @@ nav {
     align-items: center;
 }
 
-.fa-feather {
-    margin-right: 0.4rem;
-}
-
 .logo p{
     font-family: InterBold;
     font-size: 1.06rem;
     color: #111111;
+}
+
+.logo i{
+    margin-right: 0.4rem;
 }
 
 .product-nav-info, .login-signup-nav {
@@ -63,7 +69,6 @@ nav {
 
 .login-btn {
     color: #fffefc;
-    margin: 0rem 0rem 0rem 0.4rem;
     padding: 0.5rem 1rem 0.5rem 1rem;
     border-radius: 0.4rem;
     background-color: #111111;
@@ -77,6 +82,7 @@ nav p, nav a {
     letter-spacing: -0.01rem;
     padding: 0rem 0.8rem;
     text-decoration: none;
+    cursor: pointer;
 }
 
 nav a:hover {
@@ -159,9 +165,59 @@ main {
 
 .section1 {
     width: 175;
-    height: 800px;
-    margin: 0rem 15rem 0rem 15rem;
+    height: 500px;
+    margin: 0rem 4rem 0rem 4rem;
     background-color: #f9f5f1;
-    
+    border-radius: 1.6%;
 }
 
+.section1-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0%;
+    padding: 2.6rem 11rem;
+    color: #111111;
+}
+
+.section1-text p{
+    font-family: InterSemiBold;
+    font-size: ;
+    margin: 0%;
+    cursor: pointer;
+    padding: 0.4rem 0.8rem 0.4rem 0.8rem;
+}
+
+.section1-text p:hover {
+    background-color: #e9e7e3;
+    border-radius: 0.4rem;
+}
+
+.section1-browser {
+    background-color: red;
+}
+
+
+
+
+
+
+
+
+.section2, .section3, .section4 {
+    margin: 0%;
+    padding: 4rem 15rem;
+}
+
+.activity-text p {
+    font-family: InterMedium;
+    color: #111111;
+}
+
+.activity-image {
+    width: 10%;
+}
+
+.activity-text-and-image {
+
+}
