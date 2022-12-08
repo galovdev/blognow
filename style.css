@@ -166,7 +166,7 @@ main {
 .section1 {
     width: 175;
     height: 500px;
-    margin: 0rem 4rem 0rem 4rem;
+    margin: 0rem 4.2rem 0rem 4.4rem;
     background-color: #f9f5f1;
     border-radius: 1.6%;
     box-shadow: rgba(131, 131, 141, 0.1) 0px 1px 1px 0px;
@@ -205,7 +205,7 @@ main {
 
 .section-title {
     font-family: InterBold;
-    font-size: 2.4rem;
+    font-size: 2.6rem;
     text-align: center;
     margin-top: 4.2rem;
     margin-left: 1rem;
@@ -225,7 +225,7 @@ main {
 .section-p {
     font-family: InterMedium;
     color: #111111;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     width: 64%;
     line-height: 1.8rem;
 }
@@ -241,11 +241,10 @@ main {
 
 .section2-community, .section3-community, .section4-community {
     background-color: white;
-    box-shadow: rgba(131, 131, 141, 0.1) 0px 7px 29px 0px;
+    box-shadow: rgba(131, 131, 141, 0.08) 0px 6px 24px 0px;
     border-radius: 10px;
     padding: 8rem;
     margin: 2rem 0rem 0rem 0rem;
-
 }
 
 .section2-community, .section4-community {
@@ -254,4 +253,61 @@ main {
 
 .section3-community {
     padding: 5.4rem;
+}
+
+.section-hr {
+    margin: 6rem 15rem;
+    height: 1.8px;
+    border: 0; 
+    border-top: 1.8px solid #e5e4e2;
+}
+
+.plans {
+    display: flex;
+    justify-content: center;
+    margin: 4.6rem 15rem;
+}
+
+.plan {
+    width: 28%;
+    margin: 0rem 0.5rem;
+    border: 2px solid #e5e4e2;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.personal-plan img{
+    width: 1%;
+}
+
+.plan img{
+    width: 18%;
+}
+
+.plan p{
+    font-family: InterMedium;
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+}
+
+.plan h2{
+    font-family: InterBold;
+}
+
+.section5-title{
+    text-align: center;
+    margin-top: 5rem
+}
+
+.section5-title h1{
+    font-family: InterBold;
+    font-size: 2.4rem;
+    margin: 0%;
+}
+
+.section5-title p{
+    font-family: InterSemiBold;
+    color: #111111;
+    font-size: 1rem;
+    margin: 1rem 0rem 0rem 0rem;
 }
