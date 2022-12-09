@@ -262,6 +262,25 @@ main {
     border-top: 1.8px solid #e5e4e2;
 }
 
+.section5-title{
+    text-align: center;
+    margin-top: 5rem
+}
+
+.section5-title h1, .section6 h1{
+    font-family: InterBold;
+    font-size: 2.4rem;
+    margin: 0%;
+    text-align: center;
+}
+
+.section5-title p{
+    font-family: InterSemiBold;
+    color: #111111;
+    font-size: 1rem;
+    margin: 0.8rem 0rem 0rem 0rem;
+}
+
 .plans {
     display: flex;
     justify-content: center;
@@ -270,10 +289,10 @@ main {
 
 .plan {
     width: 28%;
-    margin: 0rem 0.5rem;
+    margin: 0rem 0.6rem;
     border: 2px solid #e5e4e2;
     border-radius: 10px;
-    padding: 1rem;
+    padding: 1.2rem;
 }
 
 .personal-plan img{
@@ -284,30 +303,69 @@ main {
     width: 18%;
 }
 
+#pro-plan-image {
+    width: 22%;
+    padding-top: 0.16rem;
+}
+
 .plan p{
     font-family: InterMedium;
-    font-size: 0.9rem;
-    line-height: 1.3rem;
+    font-size: 0.92rem;
+    margin: 0%;
 }
 
 .plan h2{
     font-family: InterBold;
+    margin: 0%;
+    padding: 0.8rem 0rem 0.4rem 0rem;
 }
 
-.section5-title{
-    text-align: center;
-    margin-top: 5rem
+.plan-pricing i{
+    color: #111111;
 }
 
-.section5-title h1{
-    font-family: InterBold;
-    font-size: 2.4rem;
+.plan-pricing p{
     margin: 0%;
 }
 
-.section5-title p{
-    font-family: InterSemiBold;
-    color: #111111;
-    font-size: 1rem;
-    margin: 1rem 0rem 0rem 0rem;
+.plan h3{
+    font-family: InterBold;
+    font-size: 1.8rem;
+    margin: 0%;
+    padding: 0.8rem 0rem 0.2rem 0rem;
 }
+
+.plan h4{
+    margin: 0%;
+    font-family: InterSemiBold;
+    padding: 0.2rem 0rem 0.5rem 0rem;
+    font-size: .9rem
+}
+
+.plan button{
+    background-color: #111111;
+    font-family: InterSemiBold;
+    color: #fffefc;
+    padding: 0.44rem 0.88rem;
+    border-radius: 6px;
+    margin: 0.8rem 0rem;
+    cursor: pointer;
+    transition: background-color 0.8s;
+}
+
+.plan button:hover {
+    background-color: #fffefc;
+    color: #111111;
+}
+
+.plan-perks {
+    padding: 0.1rem 0rem;
+}
+
+.q-a-hr {
+    height: 1.8px;
+    border: 0; 
+    border-top: 1.8px solid #e5e4e2;
+    margin: 2rem 15rem;
+}
+
