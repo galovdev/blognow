@@ -369,3 +369,15 @@ main {
     margin: 2rem 15rem;
 }
 
+
+
+.fa-chevron-down {
+    padding-left: 0.3rem;
+    cursor: pointer;
+}
+
+.section7-container {
+    display: flex;
+    flex-direction: row;
+}
+
