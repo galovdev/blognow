@@ -270,6 +270,7 @@ main {
 .section5-title h1, .section6 h1{
     font-family: InterBold;
     font-size: 2.4rem;
+    letter-spacing: ;
     margin: 0%;
     text-align: center;
 }
@@ -362,14 +363,16 @@ main {
     padding: 0.1rem 0rem;
 }
 
+.section6 h1 {
+    letter-spacing: 0.16rem;
+}
+
 .q-a-hr {
     height: 1.8px;
     border: 0; 
     border-top: 1.8px solid #e5e4e2;
     margin: 2rem 15rem;
 }
-
-
 
 .fa-chevron-down {
     padding-left: 0.3rem;
@@ -379,5 +382,45 @@ main {
 .section7-container {
     display: flex;
     flex-direction: row;
+    margin: 0rem 4rem;
+    justify-content: space-between;
+}
+
+.section7 h1{
+    font-family: InterBold;
+    margin: 0%;
+    font-size: 1.4rem;
+    padding: 1rem 0rem 0rem 0.8rem;
+}
+
+.section7 h2{
+    font-family: InterSemiBold;
+    margin: 0%;
+    padding: 1rem 0rem;
+}
+
+.section7 p{
+    font-family: InterRegular;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 0%;
+    padding: 0.4rem 0rem;
+}
+
+.section7 p:hover {
+    font-family: InterMedium;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 0%;
+    padding: 2rem 4rem;
+    text-align: center;
+    align-items: center;
+}
+
+.fa-brands {
+    margin: 0%;
 }
 
