@@ -363,8 +363,30 @@ main {
     padding: 0.1rem 0rem;
 }
 
+.section6 {
+    text-align: center;
+    font-family: InterSemiBold;
+}
+
 .section6 h1 {
     letter-spacing: 0.16rem;
+}
+
+.section6 p{
+    margin: 0%;
+}
+
+.questions {
+    display: flex;
+    flex-direction: column;
+}
+
+.question-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0rem 15rem;
+    justify-content: space-between;
 }
 
 .q-a-hr {
@@ -382,21 +404,23 @@ main {
 .section7-container {
     display: flex;
     flex-direction: row;
-    margin: 0rem 4rem;
+    margin: 2rem 4rem 0rem 4rem;
     justify-content: space-between;
+    color: #111111;
 }
 
 .section7 h1{
     font-family: InterBold;
     margin: 0%;
-    font-size: 1.4rem;
-    padding: 1rem 0rem 0rem 0.8rem;
+    font-size: 1.2rem;
+    padding: 1rem 0rem 0rem 1rem;
 }
 
 .section7 h2{
     font-family: InterSemiBold;
     margin: 0%;
     padding: 1rem 0rem;
+    font-size: 1.2rem;
 }
 
 .section7 p{
@@ -404,7 +428,7 @@ main {
     cursor: pointer;
     font-size: 1rem;
     margin: 0%;
-    padding: 0.4rem 0rem;
+    padding: 0.4rem 0.4rem;
 }
 
 .section7 p:hover {
@@ -415,12 +439,35 @@ footer {
     display: flex;
     justify-content: space-between;
     margin: 0%;
-    padding: 2rem 4rem;
+    padding: 0rem 4rem 2rem 4rem;
     text-align: center;
     align-items: center;
+    font-family: InterMedium;
+    color: #111111;
+}
+
+.cookies-footer {
+    cursor: pointer;
+    padding-left: 0.6rem;
 }
 
 .fa-brands {
     margin: 0%;
+    padding-left: 0.8rem;
+    cursor: pointer;
 }
+
+#hr-footer {
+    margin: 5rem 4rem 2rem 4rem;
+}
+
+.languge-cookies-footer {
+    display: flex;
+}
+
+footer p{
+    margin: 0%;
+    letter-spacing: 0.02rem;
+}
+
 
