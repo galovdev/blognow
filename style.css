@@ -165,10 +165,10 @@ main {
 
 .section1 {
     width: 175;
-    height: 500px;
+    height: 550px;
     margin: 0rem 4.2rem 0rem 4.4rem;
     background-color: #f9f5f1;
-    border-radius: 1.6%;
+    border-radius: 12px;
     box-shadow: rgba(131, 131, 141, 0.1) 0px 1px 1px 0px;
 }
 
@@ -177,13 +177,12 @@ main {
     flex-direction: row;
     justify-content: space-between;
     margin: 0%;
-    padding: 2.6rem 11rem;
+    padding: 2.2rem 11rem 2.2rem 11rem;
     color: #111111;
 }
 
 .section1-text p{
     font-family: InterSemiBold;
-    font-size: ;
     margin: 0%;
     cursor: pointer;
     padding: 0.4rem 0.8rem 0.4rem 0.8rem;
@@ -195,8 +194,13 @@ main {
 }
 
 .section1-browser {
-    background-color: red;
+    background-color: #fffefc;
+    margin: 0rem 11rem;
+    height: 74%;
+    border-radius: 14px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
+
 
 .section-title-and-number-container {
     display: flex;
@@ -214,7 +218,8 @@ main {
 .section-number {
     font-family: InterBold;
     font-size: 2 rem;
-    text-align: center;
+    text-align: start;
+    padding-top: 2rem;
 }
 
 .section2, .section3, .section4 {
@@ -304,6 +309,14 @@ main {
     width: 18%;
 }
 
+.plan-hr {
+    height: 1.8px;
+    border: 0; 
+    border-top: 1.8px solid #e5e4e2;
+    width: 100%;
+    margin: 1rem 0rem 0rem 0rem;
+}
+
 #pro-plan-image {
     width: 22%;
     padding-top: 0.16rem;
@@ -370,6 +383,8 @@ main {
 
 .section6 h1 {
     letter-spacing: 0.16rem;
+    padding: 0rem 0rem 3rem 0rem;
+    margin: 0%;
 }
 
 .section6 p{
@@ -387,13 +402,14 @@ main {
     align-items: center;
     margin: 0rem 15rem;
     justify-content: space-between;
+    cursor: pointer;
 }
 
 .q-a-hr {
     height: 1.8px;
     border: 0; 
     border-top: 1.8px solid #e5e4e2;
-    margin: 2rem 15rem;
+    margin: 1.8rem 15rem;
 }
 
 .fa-chevron-down {
@@ -404,35 +420,35 @@ main {
 .section7-container {
     display: flex;
     flex-direction: row;
-    margin: 2rem 4rem 0rem 4rem;
+    margin: 5.2rem 4rem 0rem 4rem;
     justify-content: space-between;
     color: #111111;
 }
 
 .section7 h1{
     font-family: InterBold;
-    margin: 0%;
+    margin: 5rem 0rem 0rem 0rem;
     font-size: 1.2rem;
-    padding: 1rem 0rem 0rem 1rem;
+    padding: 5rem 0rem 0rem 1rem;
 }
 
 .section7 h2{
     font-family: InterSemiBold;
     margin: 0%;
-    padding: 1rem 0rem;
-    font-size: 1.2rem;
+    padding: 0rem 0rem 0.6rem 0rem;
+    font-size: 1.1rem;
 }
 
 .section7 p{
     font-family: InterRegular;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 0.92rem;
     margin: 0%;
-    padding: 0.4rem 0.4rem;
+    padding: 0.4rem 0rem;
 }
 
 .section7 p:hover {
-    font-family: InterMedium;
+    font-family: InterSemiBold;
 }
 
 footer {
@@ -441,20 +457,20 @@ footer {
     margin: 0%;
     padding: 0rem 4rem 2rem 4rem;
     text-align: center;
+    font-size: 0.96rem;
     align-items: center;
     font-family: InterMedium;
     color: #111111;
-}
-
-.cookies-footer {
-    cursor: pointer;
-    padding-left: 0.6rem;
 }
 
 .fa-brands {
     margin: 0%;
     padding-left: 0.8rem;
     cursor: pointer;
+}
+
+.fa-chevron-down {
+    padding-right: 0.4rem;
 }
 
 #hr-footer {
@@ -469,5 +485,4 @@ footer p{
     margin: 0%;
     letter-spacing: 0.02rem;
 }
-
 
