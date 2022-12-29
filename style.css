@@ -251,16 +251,22 @@ main {
     background-color: white;
     box-shadow: rgba(131, 131, 141, 0.08) 0px 6px 24px 0px;
     border-radius: 10px;
-    padding: 8rem;
+    padding: 2.2rem;
     margin: 2rem 0rem 0rem 0rem;
 }
 
-.section2-community, .section4-community {
-    width: 47%;
+.section2-community, .section3-community{
+    font-size: 1rem;
+    line-height: 1.5rem;
 }
 
-.section3-community {
-    padding: 5.4rem;
+#username-thoughts{
+    font-family: InterSemiBold;
+    letter-spacing: 0.02rem;
+}
+
+.section2-community, .section4-community {
+    width: 80%;
 }
 
 .section-hr {
