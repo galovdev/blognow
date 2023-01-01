@@ -196,13 +196,14 @@ main {
 .section1-browser {
     background-color: #fffefc;
     margin: 0rem 11rem;
-    height: 74%;
+    height: 76%;
     border-radius: 14px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .section1-browser img{
     width: 100%;
+    max-height: 450px;
 }
 
 .section-title-and-number-container {
