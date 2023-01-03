@@ -197,6 +197,7 @@ main {
     background-color: #fffefc;
     margin: 0rem 11rem;
     height: 76%;
+    max-height: 500px;
     border-radius: 14px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
