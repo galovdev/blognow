@@ -28,37 +28,92 @@
     src: url("Inter-Black.otf");
 }
 
-body {
-    margin: 0%;
-    padding: 0%;
+nav, main, section, footer{ 
+    width: 100%;
+}
+
+*{ 
+    margin:0; 
+    padding: 0; 
+    font: inherit;
+    box-sizing: border-box;
+}
+
+ul[ role=”list” ], ol [ role=”list”] {
+    list-style:none; 
+}
+
+html:focus-within {
+     scroll-behavior: smooth 
+    }
+
+html, body {
+    height:100% 
+} 
+
+body { 
+    text-rendering: optimize-speed; 
+    min-height: 100vh;
     background-color: #fffefc;
     color: #111111;
 }
 
-i {
-    color: #111111;
-    margin-right: 0.44rem;
+a {
+    text-decoration: none;
 }
 
-nav {
+*, 
+*::before, 
+*::after {
+    box-sizing:border-box;
+}
+
+img, picture, svg {
+    max-width: 100%;
+    display: block
+}
+
+@media (prefers-reduced-motion: reduce) {
+     html:focus-within { scroll-behavior:auto; }
+}
+
+set containers to { width: 88%; max-width: 1400px; margin: 0 auto; }
+
+
+
+
+
+
+
+
+
+
+.nav-container {
     width: 80%;
-    margin: 0 auto;
-    padding-top: 2rem;
+    margin: 2em auto;
+}
+
+.main-container {
+    width: 66%;
+    margin: 4em auto;
+}
+
+i {
+    color: #111111;
+    margin-right: 0.44em;
+}
+
+.nav-container {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    color: aqua;
     align-items: center;
 }
 
 .logo p{
     font-family: InterBold;
     font-size: 1.06rem;
-    color: #111111;
-}
-
-.logo i{
-    margin-right: 0.46rem;
+    padding: 0em 0.8em 0em 0em;
 }
 
 .product-nav-info, .login-signup-nav {
@@ -70,7 +125,7 @@ nav {
 
 .login-btn {
     color: #fffefc;
-    padding: 0.5rem 1rem 0.5rem 1rem;
+    padding: 0.52em 1.04em 0.52em 1.04em;
     border-radius: 0.4rem;
     background-color: #111111;
     font-size: 0.96rem;
@@ -78,35 +133,46 @@ nav {
 
 nav p, nav a {
     font-family: InterSemiBold;
-    color: #111111;
     font-size: 0.96rem;
     letter-spacing: -0.01rem;
-    padding: 0rem 0.8rem;
+    padding: 0em 0.8em;
     text-decoration: none;
     cursor: pointer;
 }
 
 nav a:hover {
-    padding: 0rem 0.44rem;
     background-color: #f9f5f1;
-    padding: 0.5rem 0.8rem 0.5rem 0.8rem;
-    border-radius: 0.4rem;
+    padding: 0.5em 0.8em 0.5em 0.8em;
+    border-radius: 0.4em;
 }
 
 nav ul{
     list-style-type: none;
 }
 
-main {
-    padding: 4rem 15rem 2.6rem 15rem;
+.main-texts {
+    display: flex;
+    justify-content: space-between;
+    margin: 3.8em 0em;
+}
+
+.input-btn {
+    display: flex;
+}
+
+.input-btn button{
+    cursor: pointer;
+}
+
+::placeholder {
+    color:#111111;
+    font-size: 0.88rem;
 }
 
 .main-text h1{
     font-family: InterBold;
     font-size: 3.8rem;
-    margin: 0%;
     letter-spacing: -0.06rem;
-    padding-bottom: 0.16rem;
 }
 
 .support-main-text {
@@ -119,23 +185,21 @@ main {
     font-family: InterSemiBold;
     font-size: 1.4rem;
     letter-spacing: -.01rem;
-    margin: 0%;
 }
 
 .support-main-text input {
-    padding: 0.4rem 0.6rem;
+    padding: 0.4em 0.6em;
     font-family: InterMedium;
     border-width: 0.14rem;
     border-radius: 0.26rem;
     color: #111111;
-    margin-right: 0.2rem;
-    letter-spacing: 0.01rem;
+    margin-right: 0.2em;
+    letter-spacing: 0.02rem;
     width: 100%;
 }
 
 .support-main-text button {
-    display: flex;
-    padding: 0.4rem 0.6rem;
+    padding: 0.4em 0.6em;
     background-color: #111111;
     font-family: InterBold;
     border-width: 0.14rem;
@@ -144,25 +208,8 @@ main {
     color: #fffefc;
 }
 
-.main-illustration img{
-    width: 100%;
-}
 
-.main-texts {
-    display: flex;
-    justify-content: space-between;
-    padding: 3.5rem 0rem;
-    margin: 0%;
-}
-
-.input-btn {
-    display: flex;
-}
-
-::placeholder {
-    color:#111111;
-    font-size: 0.84rem;
-}
+/* 
 
 .section1 {
     width: 175;
