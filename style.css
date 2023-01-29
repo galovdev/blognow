@@ -79,23 +79,23 @@ img, picture, svg {
 
 set containers to { width: 88%; max-width: 1400px; margin: 0 auto; }
 
+/* 
+    nav = 80% - max width = 1300px
+    content = 55% - max width = 893.75px
+
+*/
 
 
+/* -- NAV SECTION -- */
 
-
-
-
-
-
-
-.nav-container {
-    width: 80%;
-    margin: 2em auto;
+nav {
+    background-color: black; 
 }
 
-.main-container {
-    width: 66%;
-    margin: 4em auto;
+.nav-container {
+    max-width: 1300px;
+    width: 80%;
+    background-color: #fffefc;
 }
 
 i {
@@ -108,15 +108,21 @@ i {
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
+    padding: 2em 0em;
+    position: fixed;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
 }
 
-.logo p{
+.logo{
     font-family: InterBold;
     font-size: 1.06rem;
     padding: 0em 0.8em 0em 0em;
 }
 
-.product-nav-info, .login-signup-nav {
+.nav-menu, .login-signup-nav {
     display: flex;
     justify-content: space-between;
     text-align: center;
@@ -125,7 +131,7 @@ i {
 
 .login-btn {
     color: #fffefc;
-    padding: 0.52em 1.04em 0.52em 1.04em;
+    padding: 0.5em 1em 0.5em 1em;
     border-radius: 0.4rem;
     background-color: #111111;
     font-size: 0.96rem;
@@ -135,14 +141,18 @@ nav p, nav a {
     font-family: InterSemiBold;
     font-size: 0.96rem;
     letter-spacing: -0.01rem;
-    padding: 0em 0.8em;
+    padding: 0em 1em;
     text-decoration: none;
     cursor: pointer;
 }
 
+.nav-menu a {
+    color: #111111;
+}
+
 nav a:hover {
     background-color: #f9f5f1;
-    padding: 0.5em 0.8em 0.5em 0.8em;
+    padding: 0.5em 1em 0.5em 1em;
     border-radius: 0.4em;
 }
 
@@ -150,10 +160,53 @@ nav ul{
     list-style-type: none;
 }
 
+.nav-toggle {
+    color: #111111;
+    background: none;
+    border: none;
+
+    display: none;
+}
+
+@media (max-width:600px) {
+    .nav-container{
+        width: 96%;
+    }
+    .nav-menu {
+        flex-direction: column;
+        position: fixed;
+        left: 0;
+        top: 88.75px;
+        background-color: #fffefc;
+        width: 100%;
+    }
+    .nav-container{
+        min-height: 88.7px;
+        margin: 0 auto;
+    }
+
+}
+
+
+
+/* -- MAIN SECTION -- */
+
+
+
+.main-container {
+    width: 55%;
+    margin: 0em auto;
+    max-width: 893.75px;
+}
+
+main {
+    padding-top: 8em;
+}
+
 .main-texts {
     display: flex;
     justify-content: space-between;
-    margin: 3.8em 0em;
+    margin: 2.6em 0em;
 }
 
 .input-btn {
@@ -206,6 +259,19 @@ nav ul{
     border-radius: 0.26rem;
     letter-spacing: 0.04rem;
     color: #fffefc;
+}
+
+@media (max-width:600px) {
+    .main-container {
+        width: 88%;
+        margin: 0em auto;
+    }
+    .main-texts {
+        flex-direction: column;
+    }
+    .main-text h1{
+        font-size: 2rem;
+    }
 }
 
 
