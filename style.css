@@ -150,7 +150,7 @@ nav p, nav a {
     color: #111111;
 }
 
-nav a:hover {
+nav a:hover,  nav a:active {
     background-color: #f9f5f1;
     padding: 0.5em 1em 0.5em 1em;
     border-radius: 0.4em;
@@ -164,8 +164,14 @@ nav ul{
     color: #111111;
     background: none;
     border: none;
-
+    cursor: pointer;
     display: none;
+}
+
+.nav-toggle i:hover, .nav-toggle i:active {
+    background-color: #f9f5f1;;
+    padding: 0.5em 1em 0.5em 1em;
+    border-radius: 0.4em;
 }
 
 @media (max-width:600px) {
@@ -179,10 +185,18 @@ nav ul{
         top: 88.75px;
         background-color: #fffefc;
         width: 100%;
+        left: 100%;
+        transition: left 0.3s;
     }
     .nav-container{
         min-height: 88.7px;
         margin: 0 auto;
+    }
+    .nav-toggle {
+        display: block;
+    }
+    .nav-menu-visible {
+        left: 0;
     }
 }
 
