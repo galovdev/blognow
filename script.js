@@ -30,6 +30,6 @@ const navMenuVisible = document.querySelector(".nav-menu-visible");
  
 
 navToggle.addEventListener("click", function onClick(event) {
-    navMenu.classList.toggle(".nav-menu-visible")
+    navMenu.classList.toggle("nav-menu-visible")
 }) 
 
