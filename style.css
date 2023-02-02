@@ -30,6 +30,7 @@
 
 nav, main, section, footer{ 
     width: 100%;
+    max-width: 1300px;
 }
 
 *{ 
@@ -77,24 +78,26 @@ img, picture, svg {
      html:focus-within { scroll-behavior:auto; }
 }
 
-set containers to { width: 88%; max-width: 1400px; margin: 0 auto; }
+.nav-container, .articles-container  {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.main-container {
+    width: 58%;
+    margin: 0em auto;
+}
 
 /* 
     nav = 80% - max width = 1300px
-    content = 55% - max width = 893.75px
+    content = 58% - max width = 1050px
 
 */
 
 
 /* -- NAV SECTION -- */
 
-nav {
-    background-color: black; 
-}
-
 .nav-container {
-    max-width: 1300px;
-    width: 80%;
     background-color: #fffefc;
 }
 
@@ -108,7 +111,7 @@ i {
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
-    padding: 2em 0em;
+    padding: 1.8em 0em;
     position: fixed;
     left:0;
     right:0;
@@ -130,14 +133,18 @@ i {
 }
 
 .login-btn {
+    font-family: InterSemiBold;
     color: #fffefc;
+    letter-spacing: -0.01rem;
     padding: 0.5em 1em 0.5em 1em;
     border-radius: 0.4rem;
     background-color: #111111;
     font-size: 0.96rem;
+    cursor: pointer;
+    margin-left: 0.4em;
 }
 
-nav p, nav a {
+nav a {
     font-family: InterSemiBold;
     font-size: 0.96rem;
     letter-spacing: -0.01rem;
@@ -150,7 +157,7 @@ nav p, nav a {
     color: #111111;
 }
 
-nav a:hover,  nav a:active {
+.nav-menu a:hover,  .nav-menu a:active, .login-signup-nav a:hover, .login-signup-nav a:hover {
     background-color: #f9f5f1;
     padding: 0.5em 1em 0.5em 1em;
     border-radius: 0.4em;
@@ -176,7 +183,7 @@ nav ul{
 
 @media (max-width:600px) {
     .nav-container{
-        width: 96%;
+        width: 90%;
     }
     .nav-menu {
         flex-direction: column;
@@ -189,8 +196,9 @@ nav ul{
         transition: left 0.3s;
     }
     .nav-container{
-        min-height: 88.7px;
+        min-height: 80.7px;
         margin: 0 auto;
+        padding: 0.6em 0em;
     }
     .nav-toggle {
         display: block;
@@ -200,17 +208,14 @@ nav ul{
     }
 }
 
+@media (min-width:600px) and (max-width:800px) {
+
+}
 
 
 /* -- MAIN SECTION -- */
 
 
-
-.main-container {
-    width: 55%;
-    margin: 0em auto;
-    max-width: 893.75px;
-}
 
 main {
     padding-top: 8em;
@@ -219,7 +224,7 @@ main {
 .main-texts {
     display: flex;
     justify-content: space-between;
-    margin: 2.6em 0em;
+    margin: 2.4em 0em;
 }
 
 .input-btn {
@@ -256,9 +261,9 @@ main {
 .support-main-text input {
     padding: 0.4em 0.6em;
     font-family: InterMedium;
-    border-width: 0.14rem;
+    color: #999;
+    border: 0.14rem solid #111111;
     border-radius: 0.26rem;
-    color: #111111;
     margin-right: 0.2em;
     letter-spacing: 0.02rem;
     width: 100%;
@@ -272,41 +277,61 @@ main {
     border-radius: 0.26rem;
     letter-spacing: 0.04rem;
     color: #fffefc;
+    border: none;
 }
 
 @media (max-width:600px) {
     .main-container {
-        width: 88%;
+        width: 90%;
         margin: 0em auto;
     }
     .main-texts {
         flex-direction: column;
+        margin: 0 auto;
+        padding: 1em 0em;
     }
     .main-text h1{
         font-size: 2rem;
+        letter-spacing: 0.01rem;
+    }
+    .support-main-text p{
+        font-size: 1.1rem;
+        padding-top: 0.73em;
+        text-align: center;
+    }
+    main {
+        padding-top: 5.5em;
+    }
+    .support-main-text button {
+        padding: 0.5em 1.1em;
+        letter-spacing: 0.05rem;
+    }
+    .input-btn {
+        margin-top: 0.8em;
     }
 }
 
 
-/* 
+/* -- ARTICLES SECTION -- */
 
-.section1 {
-    width: 175;
-    height: 550px;
-    margin: 0rem 4.2rem 0rem 4.4rem;
+
+.articles-container {
     background-color: #f9f5f1;
     border-radius: 12px;
     box-shadow: rgba(131, 131, 141, 0.1) 0px 1px 1px 0px;
 }
 
-.section1-text {
+.article-topics {
+    width: 66%;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0%;
-    padding: 2.2rem 11rem 2.2rem 11rem;
+    padding: 1.8em 0em 0em 0em;
     color: #111111;
 }
+
+/* 
 
 .section1-text p{
     font-family: InterSemiBold;
