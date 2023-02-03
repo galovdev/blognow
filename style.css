@@ -83,9 +83,9 @@ img, picture, svg {
     margin: 0 auto;
 }
 
-.main-container {
-    width: 58%;
-    margin: 0em auto;
+.main-container, .thoughts-container, .learn-container, .community-container {
+    width: 60%;
+    margin: 0 auto;
 }
 
 /* 
@@ -97,7 +97,9 @@ img, picture, svg {
 
 /* -- NAV SECTION -- */
 
-.nav-container {
+nav {
+    overflow: hidden;
+    position: fixed;
     background-color: #fffefc;
 }
 
@@ -112,7 +114,6 @@ i {
     flex-direction: row;
     align-items: center;
     padding: 1.8em 0em;
-    position: fixed;
     left:0;
     right:0;
     margin-left:auto;
@@ -177,8 +178,13 @@ nav ul{
 
 .nav-toggle i:hover, .nav-toggle i:active {
     background-color: #f9f5f1;;
-    padding: 0.5em 1em 0.5em 1em;
+    padding: 0.8em 1em 0.8em 1em;
     border-radius: 0.4em;
+}
+
+.nav-toggle i{
+    padding: 0.8em 1em 0.8em 1em;
+    margin: 0;
 }
 
 @media (max-width:600px) {
@@ -189,11 +195,12 @@ nav ul{
         flex-direction: column;
         position: fixed;
         left: 0;
-        top: 88.75px;
+        top: 79.75px;
         background-color: #fffefc;
         width: 100%;
         left: 100%;
         transition: left 0.3s;
+        min-height: 200px;
     }
     .nav-container{
         min-height: 80.7px;
@@ -206,6 +213,17 @@ nav ul{
     .nav-menu-visible {
         left: 0;
     }
+    .nav-menu a{
+        padding: 1em 2em;
+        font-size: 1.04rem;
+        letter-spacing: 0.02rem;
+    }
+    .nav-menu{
+        justify-content: space-evenly;
+        text-align: center;
+        align-items: center;
+    }
+    
 }
 
 @media (min-width:600px) and (max-width:800px) {
@@ -224,7 +242,7 @@ main {
 .main-texts {
     display: flex;
     justify-content: space-between;
-    margin: 2.4em 0em;
+    margin: 2.4em 0em 4.6em 0em;
 }
 
 .input-btn {
@@ -288,7 +306,7 @@ main {
     .main-texts {
         flex-direction: column;
         margin: 0 auto;
-        padding: 1em 0em;
+        padding: 1.2em 0em;
     }
     .main-text h1{
         font-size: 2rem;
@@ -296,8 +314,11 @@ main {
     }
     .support-main-text p{
         font-size: 1.1rem;
-        padding-top: 0.73em;
+        padding-top: 0.66em;
+        letter-spacing: 0.02rem;
         text-align: center;
+        align-items: center;
+        justify-content: center;
     }
     main {
         padding-top: 5.5em;
@@ -319,98 +340,152 @@ main {
     background-color: #f9f5f1;
     border-radius: 12px;
     box-shadow: rgba(131, 131, 141, 0.1) 0px 1px 1px 0px;
+    padding: 1.8em 0em;
 }
 
 .article-topics {
-    width: 66%;
+    width: 76%;
     margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 1.8em 0em 0em 0em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(0, 1fr)); 
+    grid-template-areas: "well-being writing gaming culture music news politics";
+    align-items: center;
+    justify-items: center;
     color: #111111;
+    padding-bottom: 1.8em;
 }
 
-/* 
+.well-being-topic {
+    grid-area: well-being;
+}
 
-.section1-text p{
+.writing-topic {
+    grid-area: writing;
+}
+
+.gaming-topic {
+    grid-area: gaming;
+}
+
+.culture-topic {
+    grid-area: culture;
+}
+
+.music-topic {
+    grid-area: music;
+}
+
+.news-topic {
+    grid-area: news;
+}
+
+.politics-topic {
+    grid-area: politics;
+}
+
+.topic{
     font-family: InterSemiBold;
+    font-size: 0.9rem;
+    letter-spacing: 0.02rem;
     margin: 0%;
     cursor: pointer;
-    padding: 0.4rem 0.8rem 0.4rem 0.8rem;
+    padding: 0.4em 0.8em 0.4em 0.8em;
 }
 
-.section1-text p:hover, .section1-text p:active {
+.topic:hover, .topic:active {
     background-color: #e9e7e3;
-    border-radius: 0.4rem;
+    border-radius: 0.4em;
 }
 
-.section1-browser {
+.article-browser {
+    width: 75%;
+    margin: 0em auto;
     background-color: #fffefc;
-    margin: 0rem 11rem;
-    height: 76%;
-    max-height: 500px;
-    border-radius: 14px;
+    border-radius: 12px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
-.section1-browser img{
-    width: 100%;
-    max-height: 450px;
+@media (max-width:600px) {
+    .articles-container {
+        width: 100%;
+        padding: 1em 0em;
+        border-radius: 0px;
+        margin: 1.8em 0em 0em 0em;
+    }
+    .article-topics {
+        grid-template-areas: 
+        "writing politics gaming"
+        "news culture music"
+        "well-being well-being well-being";
+        padding-bottom: 1em;
+        width: 100%;
+    }
+    .topic {
+        padding: 0.7rem 1.2em 0.7em 1.2em;
+    }
+    .article-browser {
+        width: 90%;
+    }
 }
 
+@media (min-width:600px) and (max-width:800px) {
+}
+
+
+/* -- POSTS SECTION -- */
+
+
 .section-title-and-number-container {
-    display: flex;
-    justify-content: center;
+    margin: 8em 0em 4em 0em;
 }
 
 .section-title {
     font-family: InterBold;
     font-size: 2.6rem;
     text-align: center;
-    margin-top: 4.2rem;
-    margin-left: 1rem;
 }
 
 .section-number {
     font-family: InterBold;
-    font-size: 2 rem;
-    text-align: start;
-    padding-top: 2rem;
+    font-size: 1.2rem;
+    text-align: center;
+    padding-right: 22em;
 }
 
-.section2, .section3, .section4 {
-    margin: 0%;
-    padding: 4rem 15rem;
-}
-
-.section-p {
+.section-description {
     font-family: InterMedium;
     color: #111111;
     font-size: 1.2rem;
-    width: 64%;
     line-height: 1.8rem;
-    margin: 3rem 0rem;
+    letter-spacing: 0.02rem;
+    margin: 0;
+}
+
+.section-p-and-image {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
 .section-image {
     width: 24%;
 }
 
-.section-p-and-image {
-    display: flex;
-    justify-content: space-between;
+.section-p {
+    width: 70%;
 }
 
-.section2-community, .section3-community, .section4-community {
+.thoughts-p, .community-p, .learn-p {
+    width: 90%;
+    margin: 0 auto;
     background-color: white;
     box-shadow: rgba(131, 131, 141, 0.08) 0px 6px 24px 0px;
-    border-radius: 10px;
-    padding: 2.2rem;
-    margin: 2rem 0rem 0rem 0rem;
-}
-
-.section2-community, .section3-community{
+    border-radius: 12px;
+    font-family: InterMedium;
+    color: #111111;
+    padding: 2.2em;
+    margin: 2em 0rem 0em 0rem;
     font-size: 1rem;
     line-height: 1.5rem;
 }
@@ -420,16 +495,63 @@ main {
     letter-spacing: 0.02rem;
 }
 
-.section2-community, .section4-community {
-    width: 80%;
+@media (max-width:600px) {
+    .thoughts-container, .learn-container, .community-container {
+        width: 90%;
+    }
+    .section-title-and-number-container {
+        margin: 3em 0em 1.8em 0em;
+    }
+    .section-title {
+        font-size: 1.4rem;
+    }
+    .section-number {
+        padding-right: 12.8em;
+    }
+    .section-description {
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+        letter-spacing: 0.01rem;
+        text-align: center;
+    }
+    .section-p-and-image {
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 100%;
+    }
+    .section-image {
+        width: 30%;
+    }
+    .section-p {
+        width: 100%;
+        padding: 2.4em 0em 0em 0em;
+    }
+    .thoughts-p, .learn-p {
+        width: 100%;
+        font-size: 1.02rem;
+        padding: 1.8em;
+    }
+    .community-p{
+        padding: 0em;
+    }
+    #learn-p-and-image{
+        flex-direction: column;
+    }
 }
 
+/* -- PLANS SECTION -- */
+
 .section-hr {
-    margin: 6rem 15rem;
+    width: 60%;
+    margin: 6em auto;
     height: 1.8px;
     border: 0; 
     border-top: 1.8px solid #e5e4e2;
 }
+
+/* 
+
+
 
 .section5-title{
     text-align: center;
