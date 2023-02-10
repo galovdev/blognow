@@ -16,7 +16,7 @@
 
         <div class="nav-container">
             
-            <a class="logo"><i class="fa-solid fa-feather"></i>blognow</a>
+            <a class="logo" href="#main-section"><i class="fa-solid fa-feather"></i>blognow</a>
 
             <button id="nav-toggle" class="nav-toggle">
                 <i class="fa-solid fa-bars fa-lg" id="nav-toggle" class="nav-toggle"></i>
@@ -24,10 +24,10 @@
 
             <div>
                 <ul class="nav-menu">
-                    <li class="nav-menu-item"><a class="nav-menu-link" href="">Product</a></li>
-                    <li class="nav-menu-item"><a class="nav-menu-link" href="">Solution</a></li>
-                    <li class="nav-menu-item"><a class="nav-menu-link" href="">Resources</a></li>
-                    <li class="nav-menu-item"><a class="nav-menu-link" href="">Pricing</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link" href="#product-section">Product</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link" href="#solution-section">Solution</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link" href="#resources-section">Resources</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link" href="#pricing-section">Pricing</a></li>
                 </ul>
             </div>
 
@@ -40,7 +40,7 @@
 
     </nav>
 
-    <main>
+    <main id="main-section">
 
         <div class="main-container">
 
@@ -69,29 +69,29 @@
 
     </main>
 
-    <section>
+    <section id="product-section">
 
         <div class="articles-container">
 
             <div class="article-topics">
-                <p class="well-being-topic topic"><i class="fa-solid fa-leaf"></i><button class="well-being-button">Well-being</button></p>
-                <p class="writing-topic topic"><i class="fa-solid fa-pen"></i><button class="writing-button">Writing</button></p>
-                <p class="gaming-topic topic"><i class="fa-solid fa-gamepad"></i><button class="gaming-button">Gaming</button></p>
-                <p class="culture-topic topic"><i class="fa-solid fa-earth-americas"></i><button class="culture-button">Culture</button></p>
-                <p class="music-topic topic"><i class="fa-solid fa-music"></i><button class="music-button">Music</button></p>
-                <p class="news-topic topic"><i class="fa-solid fa-newspaper"></i><button class="news-button">News</button></p>
-                <p class="politics-topic topic"><i class="fa-solid fa-scale-balanced"></i><button class="politics-button">Politics</button></p>
+                <p class="well-being-topic topic well-being-button active-button"><i class="fa-solid fa-leaf"></i>Well-being</p>
+                <p class="writing-topic topic writing-button"><i class="fa-solid fa-pen"></i>Literature</p>
+                <p class="gaming-topic topic gaming-button"><i class="fa-solid fa-gamepad"></i>Gaming</p>
+                <p class="culture-topic topic culture-button"><i class="fa-solid fa-earth-americas"></i>Culture</p>
+                <p class="music-topic topic music-button"><i class="fa-solid fa-music"></i>Music</p>
+                <p class="news-topic topic news-button"><i class="fa-solid fa-newspaper"></i>News</p>
+                <p class="politics-topic topic politics-button"><i class="fa-solid fa-scale-balanced"></i>Politics</p>
             </div>
 
             <div class="article-browser" id="article-browser">
-                <img src="blog3.svg">
+                
             </div>
 
         </div>
 
     </section>
 
-    <section>
+    <section id="solution-section">
 
         <div class="thoughts-container">
 
@@ -181,7 +181,7 @@
 
     <hr class="section-hr">
 
-    <section>
+    <section id="pricing-section">
 
         <div class="plans-container">
 
@@ -239,7 +239,7 @@
 
     <hr class="section-hr hr-faq">
 
-    <section>
+    <section id="resources-section">
 
         <div class="faq-container">
 
@@ -393,6 +393,7 @@
 
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="script.js"></script> 
 
 </body>
