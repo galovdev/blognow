@@ -245,11 +245,6 @@ main {
     cursor: pointer;
 }
 
-::placeholder {
-    color:#111111;
-    font-size: 0.88rem;
-}
-
 .main-text h1{
     font-family: InterBold;
     font-size: 3.8rem;
@@ -272,12 +267,17 @@ main {
 .support-main-text input {
     padding: 0.4em 0.6em;
     font-family: InterMedium;
-    color: #999;
+    color: #111111;
     border: 0.14rem solid #111111;
     border-radius: 0.26rem;
     margin-right: 0.2em;
-    letter-spacing: 0.02rem;
+    letter-spacing: 0.014rem;
     width: 100%;
+}
+
+::placeholder {
+    color:#111111;
+    font-size: 0.88rem;
 }
 
 .support-main-text button {
